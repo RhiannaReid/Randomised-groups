@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Sorter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Team Sorter</h1>
+        <form id="sortForm">
+            <label for="numPeople">Number of People:</label>
+            <input type="number" id="numPeople" name="numPeople" min="2" required>
+            <label for="numTeams">Number of Teams:</label>
+            <input type="number" id="numTeams" name="numTeams" min="2" required>
+            <div id="namesContainer"></div>
+            <button type="submit">Sort Teams</button>
+            <button type="button" id="resetBtn">Reset</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
