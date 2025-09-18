@@ -1,3 +1,43 @@
+/* Dark mode styles - do not remove or overwrite .container */
+.dark-mode {
+    background: #23272a;
+    color: #e0d6ff;
+}
+.dark-mode .container {
+    background: #2c2f36;
+    border-color: #7c3aed;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.15);
+}
+.dark-mode h1 {
+    color: #a084e8;
+}
+.dark-mode label {
+    color: #a084e8;
+}
+.dark-mode input[type="number"],
+.dark-mode .person-name-input {
+    background: #23272a;
+    color: #e0d6ff;
+    border: 1px solid #7c3aed;
+}
+.dark-mode button {
+    background: #7c3aed;
+    color: #fff;
+}
+.dark-mode button:hover {
+    background: #a084e8;
+}
+.dark-mode .team {
+    background: #2c2f36;
+    border-color: #7c3aed;
+}
+.dark-mode .team-title {
+    color: #a084e8;
+}
+.dark-mode .name-box {
+    background: #2c2f36;
+    border-color: #7c3aed;
+}
 body {
     background: #fff;
     color: #1a3c1a;
