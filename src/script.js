@@ -1,3 +1,31 @@
+// Save button logic
+document.getElementById('saveBtn').addEventListener('click', function() {
+    const resultsDiv = document.getElementById('results');
+    if (!resultsDiv.innerText.trim()) {
+        alert('No teams to save!');
+        return;
+    }
+    let text = '';
+    // Convert HTML results to plain text
+    const teams = resultsDiv.querySelectorAll('.team');
+    teams.forEach((team, i) => {
+        const title = team.querySelector('.team-title').innerText;
+        text += title + '\n';
+        const members = team.querySelectorAll('li');
+        members.forEach(member => {
+            text += '  - ' + member.innerText + '\n';
+        });
+        text += '\n';
+    });
+    // Download as text file
+    const blob = new Blob([text], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'teams.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
 // Reset button logic
 document.getElementById('resetBtn').addEventListener('click', function() {
     document.getElementById('numPeople').value = '';
