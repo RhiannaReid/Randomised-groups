@@ -1,0 +1,125 @@
+/* Dark mode styles - do not remove or overwrite .container */
+.dark-mode {
+    background: #23272a;
+    color: #e0d6ff;
+}
+.dark-mode .container {
+    background: #2c2f36;
+    border-color: #7c3aed;
+    box-shadow: 0 4px 24px rgba(124, 58, 237, 0.15);
+}
+.dark-mode h1 {
+    color: #a084e8;
+}
+.dark-mode label {
+    color: #a084e8;
+}
+.dark-mode input[type="number"],
+.dark-mode .person-name-input {
+    background: #23272a;
+    color: #e0d6ff;
+    border: 1px solid #7c3aed;
+}
+.dark-mode button {
+    background: #7c3aed;
+    color: #fff;
+}
+.dark-mode button:hover {
+    background: #a084e8;
+}
+.dark-mode .team {
+    background: #2c2f36;
+    border-color: #7c3aed;
+}
+.dark-mode .team-title {
+    color: #a084e8;
+}
+.dark-mode .name-box {
+    background: #2c2f36;
+    border-color: #7c3aed;
+}
+body {
+    background: #fff;
+    color: #1a3c1a;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #f6fff6;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(26, 60, 26, 0.08);
+    padding: 32px;
+    text-align: center;
+    border: 2px solid #145a32;
+}
+h1 {
+    color: #145a32;
+    margin-bottom: 24px;
+}
+label {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: 500;
+    color: #145a32;
+}
+input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #145a32;
+    background: #fff;
+    color: #1a3c1a;
+    margin-bottom: 16px;
+}
+button {
+    background: #145a32;
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #1a3c1a;
+}
+#results {
+    margin-top: 32px;
+    text-align: left;
+}
+.team {
+    background: #f6fff6;
+    border: 1.5px solid #145a32;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+.team-title {
+    color: #145a32;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+.name-box {
+    background: #f6fff6;
+    border: 1.5px solid #145a32;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.person-name-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #145a32;
+    background: #fff;
+    color: #1a3c1a;
+}
+}
