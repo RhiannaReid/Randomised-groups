@@ -1,3 +1,10 @@
+// Reset button logic
+document.getElementById('resetBtn').addEventListener('click', function() {
+    document.getElementById('numPeople').value = '';
+    document.getElementById('numTeams').value = '';
+    document.getElementById('namesContainer').innerHTML = '';
+    document.getElementById('results').innerHTML = '';
+});
 document.getElementById('sortForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const numPeople = parseInt(document.getElementById('numPeople').value);
