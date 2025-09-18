@@ -1,3 +1,7 @@
+// Dark mode toggle
+document.getElementById('darkModeBtn').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
 // Reshuffle button logic
 document.getElementById('reshuffleBtn').addEventListener('click', function() {
     const numPeople = parseInt(document.getElementById('numPeople').value);
